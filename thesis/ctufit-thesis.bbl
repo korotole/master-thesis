@@ -1,0 +1,370 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Xie}{article}{}
+      \name{author}{5}{}{%
+        {{hash=05914ffc126d0a489a0c1e0de4fa2468}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=30c3519915a07c272d6fd946f3eaa35a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3d2ef2934950f426ad3fd3ecd4749ef5}{%
+           family={Bhowmick},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9cd726b07f8da41ac2c3cc788e4c6011}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1eb5c84ce1b5e6babe96a38473e13cf4}{%
+           family={Arvin},
+           familyi={A\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a66f8e3cd40dbb7346fa666e34c6108b}
+      \strng{fullhash}{a66f8e3cd40dbb7346fa666e34c6108b}
+      \strng{bibnamehash}{a66f8e3cd40dbb7346fa666e34c6108b}
+      \strng{authorbibnamehash}{a66f8e3cd40dbb7346fa666e34c6108b}
+      \strng{authornamehash}{a66f8e3cd40dbb7346fa666e34c6108b}
+      \strng{authorfullhash}{a66f8e3cd40dbb7346fa666e34c6108b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1524-9050}
+      \field{journaltitle}{IEEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS}
+      \field{number}{11}
+      \field{title}{Distributed Motion Planning for Safe Autonomous Vehicle Overtaking via Artificial Potential Field}
+      \field{volume}{23}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9830995
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9830995
+      \endverb
+    \endentry
+    \entry{Xie2}{article}{}
+      \name{author}{4}{}{%
+        {{hash=05914ffc126d0a489a0c1e0de4fa2468}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=30c3519915a07c272d6fd946f3eaa35a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9cd726b07f8da41ac2c3cc788e4c6011}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1eb5c84ce1b5e6babe96a38473e13cf4}{%
+           family={Arvin},
+           familyi={A\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dd592e3683cc4978ddf2efef2a73c1b}
+      \strng{fullhash}{9dd592e3683cc4978ddf2efef2a73c1b}
+      \strng{bibnamehash}{9dd592e3683cc4978ddf2efef2a73c1b}
+      \strng{authorbibnamehash}{9dd592e3683cc4978ddf2efef2a73c1b}
+      \strng{authornamehash}{9dd592e3683cc4978ddf2efef2a73c1b}
+      \strng{authorfullhash}{9dd592e3683cc4978ddf2efef2a73c1b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1524-9050}
+      \field{journaltitle}{IEEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS}
+      \field{number}{3}
+      \field{title}{Cooperative Adaptive Cruise Control for Connected Autonomous Vehicles using Spring Damping Energy Model}
+      \field{volume}{72}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9933795
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9933795
+      \endverb
+    \endentry
+    \entry{atakishiyev2023explainable}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=3a62d606d9813a37424c1d7b5b7501da}{%
+           family={Atakishiyev},
+           familyi={A\bibinitperiod},
+           given={Shahin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6c5a88370a1857554cc36454670a4b1d}{%
+           family={Salameh},
+           familyi={S\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f17d6b9c135febd7ab6a3e84ebbbe23e}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Hengshuai},
+           giveni={H\bibinitperiod}}}%
+        {{hash=67d0e7c2f3249b72cf5c5efc1a6c8fbd}{%
+           family={Goebel},
+           familyi={G\bibinitperiod},
+           given={Randy},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5f93614a586257cd163d5db387dc680}
+      \strng{fullhash}{a5f93614a586257cd163d5db387dc680}
+      \strng{bibnamehash}{a5f93614a586257cd163d5db387dc680}
+      \strng{authorbibnamehash}{a5f93614a586257cd163d5db387dc680}
+      \strng{authornamehash}{a5f93614a586257cd163d5db387dc680}
+      \strng{authorfullhash}{a5f93614a586257cd163d5db387dc680}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{Explainable Artificial Intelligence for Autonomous Driving: A Comprehensive Overview and Field Guide for Future Research Directions}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2112.11561
+      \endverb
+    \endentry
+    \entry{Crochemore2002}{book}{}
+      \name{author}{2}{}{%
+        {{hash=691bbb7bb0e4c5997730f28150e1d6d5}{%
+           family={Crochemore},
+           familyi={C\bibinitperiod},
+           given={Maxime},
+           giveni={M\bibinitperiod}}}%
+        {{hash=69d2cd82599f6ceb669cf76a54c6b12f}{%
+           family={Rytter},
+           familyi={R\bibinitperiod},
+           given={Wojciech},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {River Edge, NJ}%
+      }
+      \list{publisher}{1}{%
+        {World Scientific}%
+      }
+      \strng{namehash}{f64da7d3fec94c91070e464bc106525b}
+      \strng{fullhash}{f64da7d3fec94c91070e464bc106525b}
+      \strng{bibnamehash}{f64da7d3fec94c91070e464bc106525b}
+      \strng{authorbibnamehash}{f64da7d3fec94c91070e464bc106525b}
+      \strng{authornamehash}{f64da7d3fec94c91070e464bc106525b}
+      \strng{authorfullhash}{f64da7d3fec94c91070e464bc106525b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-9810247829}
+      \field{title}{Jewels of stringology}
+      \field{year}{2002}
+    \endentry
+    \entry{Motwani2014}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2f555526320a1c4028ad0f6328953999}{%
+           family={Motwani},
+           familyi={M\bibinitperiod},
+           given={Rajeev},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cafe1d770c56825ebccdb81e9f7c9b3b}{%
+           family={Ullman},
+           familyi={U\bibinitperiod},
+           given={Jeffrey\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=3eb95b81adce8c445e8b11c4e0615664}{%
+           family={Hopcroft},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Harlow}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{3eba6b5d1fd5a99b019615e409a951b5}
+      \strng{fullhash}{3eba6b5d1fd5a99b019615e409a951b5}
+      \strng{bibnamehash}{3eba6b5d1fd5a99b019615e409a951b5}
+      \strng{authorbibnamehash}{3eba6b5d1fd5a99b019615e409a951b5}
+      \strng{authornamehash}{3eba6b5d1fd5a99b019615e409a951b5}
+      \strng{authorfullhash}{3eba6b5d1fd5a99b019615e409a951b5}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Third}
+      \field{isbn}{9781292039053}
+      \field{title}{Introduction to automata theory, languages, and computation}
+      \field{year}{2014}
+    \endentry
+    \entry{Kopka2004}{book}{}
+      \name{author}{2}{}{%
+        {{hash=7ad513520366785f926861843001ed4e}{%
+           family={Kopka},
+           familyi={K\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8d668f2ff08c48a82cff87c087cdf12e}{%
+           family={Daly},
+           familyi={D\bibinitperiod},
+           given={Patrick\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brno}%
+      }
+      \list{publisher}{1}{%
+        {Computer Press}%
+      }
+      \strng{namehash}{787774515110f46e582c206f217ae671}
+      \strng{fullhash}{787774515110f46e582c206f217ae671}
+      \strng{bibnamehash}{787774515110f46e582c206f217ae671}
+      \strng{authorbibnamehash}{787774515110f46e582c206f217ae671}
+      \strng{authornamehash}{787774515110f46e582c206f217ae671}
+      \strng{authorfullhash}{787774515110f46e582c206f217ae671}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{80-7226-973-9}
+      \field{subtitle}{podrobný průvodce}
+      \field{title}{LATEX}
+      \field{year}{2004}
+    \endentry
+    \entry{def:1}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=c4518325aa68e5f0005014f669ebdbaf}{%
+           family={Neven},
+           familyi={N\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8670a47f060a8df53677275b47b29e2c}{%
+           family={Bradfield},
+           familyi={B\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{c4518325aa68e5f0005014f669ebdbaf}
+      \strng{fullhash}{c4518325aa68e5f0005014f669ebdbaf}
+      \strng{bibnamehash}{c4518325aa68e5f0005014f669ebdbaf}
+      \strng{authorbibnamehash}{c4518325aa68e5f0005014f669ebdbaf}
+      \strng{authornamehash}{c4518325aa68e5f0005014f669ebdbaf}
+      \strng{authorfullhash}{c4518325aa68e5f0005014f669ebdbaf}
+      \strng{editorbibnamehash}{8670a47f060a8df53677275b47b29e2c}
+      \strng{editornamehash}{8670a47f060a8df53677275b47b29e2c}
+      \strng{editorfullhash}{8670a47f060a8df53677275b47b29e2c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Science Logic}
+      \field{isbn}{978-3-540-44240-0}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Automata, Logic, and XML}
+      \field{volume}{2471}
+      \field{year}{2002}
+      \field{pages}{2\bibrangedash 26}
+      \range{pages}{25}
+    \endentry
+    \entry{def:2}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=931db7d26f75777de801bc1858e3ebae}{%
+           family={Libkin},
+           familyi={L\bibinitperiod},
+           given={Leonid},
+           giveni={L\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=686b9629557513e97d53205fd4c38360}{%
+           family={Caires},
+           familyi={C\bibinitperiod},
+           given={Luís},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ba28d6561c2ca6985ef29a54aa96ebb4}{%
+           family={Italiano},
+           familyi={I\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=05daa9390317e7c6168a925116bf89fe}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Luís},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1be391749a3de49eae8b6aa3838278db}{%
+           family={Palamidessi},
+           familyi={P\bibinitperiod},
+           given={Catuscia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6671a0099a9d03ad97e5cd32372ef1d0}{%
+           family={Yung},
+           familyi={Y\bibinitperiod},
+           given={Moti},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{931db7d26f75777de801bc1858e3ebae}
+      \strng{fullhash}{931db7d26f75777de801bc1858e3ebae}
+      \strng{bibnamehash}{931db7d26f75777de801bc1858e3ebae}
+      \strng{authorbibnamehash}{931db7d26f75777de801bc1858e3ebae}
+      \strng{authornamehash}{931db7d26f75777de801bc1858e3ebae}
+      \strng{authorfullhash}{931db7d26f75777de801bc1858e3ebae}
+      \strng{editorbibnamehash}{c5b9afbbbeae6f127c5a4a8e432b3521}
+      \strng{editornamehash}{c5b9afbbbeae6f127c5a4a8e432b3521}
+      \strng{editorfullhash}{c5b9afbbbeae6f127c5a4a8e432b3521}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Automata, Languages and Programming}
+      \field{isbn}{978-3-540-27580-0}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Logics for Unranked Trees: An Overview}
+      \field{volume}{3580}
+      \field{year}{2005}
+      \field{pages}{35\bibrangedash 50}
+      \range{pages}{16}
+    \endentry
+  \enddatalist
+  \missing{Sestakova2018}
+\endrefsection
+\endinput
+
