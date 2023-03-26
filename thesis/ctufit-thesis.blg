@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'ctufit-thesis.blg'
-[115] biber-MSWIN32:340> INFO - === 
-[165] Biber.pm:419> INFO - Reading 'ctufit-thesis.bcf'
-[285] Biber.pm:979> INFO - Found 9 citekeys in bib section 0
-[300] Biber.pm:4419> INFO - Processing section 0
-[312] Biber.pm:4610> INFO - Looking for bibtex file 'text/bib-database.bib' for section 0
-[394] bibtex.pm:1713> INFO - LaTeX decoding ...
-[466] bibtex.pm:1519> INFO - Found BibTeX data source 'text/bib-database.bib'
-[560] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[560] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[560] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[560] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[571] bbl.pm:660> INFO - Writing 'ctufit-thesis.bbl' with encoding 'UTF-8'
-[576] bbl.pm:763> INFO - Output to ctufit-thesis.bbl
-[582] Biber.pm:131> WARN - I didn't find a database entry for 'Sestakova2018' (section 0)
-[582] Biber.pm:133> INFO - WARNINGS: 1
+[111] biber-MSWIN32:340> INFO - === 
+[155] Biber.pm:419> INFO - Reading 'ctufit-thesis.bcf'
+[266] Biber.pm:979> INFO - Found 11 citekeys in bib section 0
+[282] Biber.pm:4419> INFO - Processing section 0
+[294] Biber.pm:4610> INFO - Looking for bibtex file 'text/bib-database.bib' for section 0
+[362] bibtex.pm:1713> INFO - LaTeX decoding ...
+[447] bibtex.pm:1519> INFO - Found BibTeX data source 'text/bib-database.bib'
+[549] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[550] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[550] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[550] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[562] bbl.pm:660> INFO - Writing 'ctufit-thesis.bbl' with encoding 'UTF-8'
+[569] bbl.pm:763> INFO - Output to ctufit-thesis.bbl
+[575] Biber.pm:131> WARN - I didn't find a database entry for 'Sestakova2018' (section 0)
+[575] Biber.pm:133> INFO - WARNINGS: 1

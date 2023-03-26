@@ -90,6 +90,9 @@
 % DEMO CONTENTS SETTINGS
 % You may choose to modify this part.
 %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tabularx}
+\usepackage{adjustbox}
+\usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{longtable}
 \usepackage{dirtree}
@@ -111,9 +114,9 @@
 \theoremstyle{definition}
 \newtheorem{example}[theorem]{Příklad}
 \theoremstyle{remark}
-\newtheorem{note}[theorem]{Poznámka}
+\newtheorem{note}[theorem]{Note}
 \newtheorem*{note*}{Poznámka}
-\newtheorem{remark}[theorem]{Pozorování}
+\newtheorem{remark}[theorem]{Remark}
 \newtheorem*{remark*}{Pozorování}
 \numberwithin{theorem}{chapter}
 %theorems, definitions, etc. END
@@ -217,27 +220,20 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hen
 \chapter{Abbreviations}
 	
 \begin{tabular}{rl}
-% DFA & Deterministic Finite Automaton\\
-% FA & Finite Automaton\\
-% LPS & Labelled Prüfer Sequence\\
-% NFA & Nondeterministic Finite Automaton\\
-% NPS & Numbered Prüfer Sequence\\
-% XML & Extensible Markup Language\\
-% XPath & XML Path Language\\
-% XSLT & eXtensible Stylesheet Language Transformations\\
-% W3C & World Wide Web Consortium
 
-ADS & Autonomous Driving System                         \\
-ASS & Active Safety System                              \\
-DAS & Driving Automation System                         \\
-SAE & Society of Automotive Engineers                   \\
-OBD & On-Board Diagnostics                              \\
-CAN & Controller Area Network                           \\
-ISO & International Organization for Standardization    \\
-ISO-TP & ISO Transport Protocol                         \\
-DDT & Dynamic driving task                              \\
-ODD & Operational design domain                         \\
-
+ACC     & Adaptive Cruise Control                           \\
+ADS     & Autonomous Driving System                         \\
+ADS-DV  & Automated Driving System-Dedicated Vehicle        \\
+ASS     & Active Safety System                              \\
+DAS     & Driving Automation System                         \\
+SAE     & Society of Automotive Engineers                   \\
+OBD     & On-Board Diagnostics                              \\
+CAN     & Controller Area Network                           \\
+ISO     & International Organization for Standardization    \\
+ISO-TP  & ISO Transport Protocol                            \\
+DDT     & Dynamic driving task                              \\
+ODD     & Operational design domain                         \\
+OEDR    & Object and Event Detection and Response 
 
 \end{tabular}
 %%%%%%%%%%%%%%%%%%%

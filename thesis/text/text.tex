@@ -11,9 +11,11 @@
 	\lipsum[1]
 \end{chapterabstract}
 
-\lipsum[2][1-4]{} [1]
-
-\lipsum[4]
+A survey of the American National Highway Traffic Safety Administration (NHTSA) reports that nearly 94\% of road accidents are due to human errors [1]. 
+These human-related mistakes are mainly classified as driver distraction, drunk or otherwise impaired driving, lack of attention, violation of the traffic rules, limited view of traffic conditions, and jay-walking pedestrians [2]. 
+The lack of rule obedience, the increasing number of vehicles on roads, and improper road culture have therefore motivated officials, manufacturers, and legislators to make substantial improvements in transportation systems. 
+There are growing research and development attempts to enhance safety and automation capability of autonomous vehicles (AVs), prevent traffic accidents, and create a better road infrastructure. 
+The potential benefits of AVs are improved convenience, operational safety (especially for seniors and people with reduced mobility) [3], reduced CO2 emissions [4], diminished transportation costs [5], improved safety [6, 7], and reduced traffic density [8].
 
 %---------------------------------------------------------------
 \section{Motivation}
@@ -47,17 +49,35 @@
 	\lipsum[1]
 \end{chapterabstract}
 
-% \lipsum[2][1-4]{} [1]
+This chapter provides a theoretical background required for understanding of the thesis' problematics and accomplishing the tasks set.
+It contains a general overview of the current state of driving automation, including a detailed taxonomy and comparison of the various levels of automation.
+It is important to specify, that the focus is being made mainly on the very \textit{taxonomy} without going into the details of processes, interactions of conditional constituents \& techologies coherent with each level individually.
 
-A survey of the American National Highway Traffic Safety Administration (NHTSA) reports that nearly 94\% of road accidents are due to human errors [1]. 
-These human-related mistakes are mainly classified as driver distraction, drunk or otherwise impaired driving, lack of attention, violation of the traffic rules, limited view of traffic conditions, and jay-walking pedestrians [2]. 
-The lack of rule obedience, the increasing number of vehicles on roads, and improper road culture have therefore motivated officials, manufacturers, and legislators to make substantial improvements in transportation systems. 
-There are growing research and development attempts to enhance safety and automation capability of autonomous vehicles (AVs), prevent traffic accidents, and create a better road infrastructure. 
-The potential benefits of AVs are improved convenience, operational safety (especially for seniors and people with reduced mobility) [3], reduced CO2 emissions [4], diminished transportation costs [5], improved safety [6, 7], and reduced traffic density [8].
+Later, the analysis of mechanisms that make the driving automation possible (inter-ECUs communication) is being done, exploring the various communication protocols and standards.
+The focus is being made on possibilities of data manipulation \& security issues that might be useful in the terms of pending implementation of the system for signals manipulation on the Automotive Ethernet.
 
 %---------------------------------------------------------------
 \section{Taxonomy of Driving Automation}
 %---------------------------------------------------------------
+In order to dive into the topic of driving automation, the \textit{driving} itsef should be overviewed at first.
+
+Driving entails a variety of decisions and actions, which may or may not involve a vehicle being in motion, or even being in an active lane of traffic. 
+The overall act of driving can be divided into three types of driver effort: strategic, tactical, and operational (Michon, 1985).
+
+\textit{Strategic} effort involves trip planning, such as deciding whether, when and where to go, how to travel, best routes to take, etc.
+
+\textit{Tactical} effort involves maneuvering the vehicle in traffic during a trip, including deciding whether and when to overtake another vehicle or change lanes, selecting an appropriate speed, checking mirrors, etc.
+
+\textit{Operational} effort involves split-second reactions that can be considered pre-cognitive or innate, such as making-micro-corrections to steering, braking and accelerating to maintain lane position in traffic or to avoid a sudden obstacle or hazardous event in the vehicle’s pathway.
+
+The schematic view of the driving task can be seen in Figure \ref{fig:driving_task}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{images/ddt_explained.PNG}
+  \caption{Schematic (not a control diagram) view of the driving task.}
+  \label{fig:driving_task}
+\end{figure}
 
 A self-driving car, also known as an \textit{autonomous car}, is a car that is capable of traveling without human input \cite{Xie}.
 Self-driving cars use sensors to perceive their surroundings, such as optical and thermographic cameras, radar, lidar, ultrasound/sonar, GPS, odometry and inertial measurement units \cite{Xie2}.
@@ -66,29 +86,34 @@ Also, further technologies used to achieve autonomous driving might include seve
 Researchers \boldorange{forecast} that by 2025 approximately 8 million autonomous or semi-autonomous vehicles will be used on the road.
 Before merging onto roadways, self-driving cars will first have to progress through several levels of driver assistance technology advancements.
 
-
-\boldorange{SAE J3016} defines 6 levels of driving automation. 
-Central to this taxonomy are the respective roles of the (human) \textit{user} and the \textit{driving automation system} in relation to each other. 
-Because changes in the functionality of a \textit{driving automation system} change the role of the (human) \textit{user}, they provide a basis for categorizing such system \textit{features}. 
+SAE J3016 defines 6 levels of automation, sketching an incremental evolution from no automation to fully autonomous vehicles \cite{Serban2020}. 
+Central to this taxonomy are the respective roles of the (human) \textit{user} and the \textit{driving automation system} (DAS) in relation to each other.
+Since changes in the functionality of a \textit{driving automation system} change the role of the (human) \textit{user}, they provide a basis for categorizing such system \textit{features}. 
 For example:
 
 % TODO: make word italic according to the document
 \begin{itemize}
 
-  \item If the driving automation system performs the sustained longitudinal and/or lateral vehicle motion control subtasks of
-  the DDT, the driver does not do so, although s/he is expected to complete the DDT. This division of roles corresponds
-  to Levels 1 and 2.
-  \item If the driving automation system performs the entire DDT, the user does not do so. However, if a DDT fallback-ready
-  user is expected to take over the DDT when a DDT performance-relevant system failure occurs or when the driving
-  automation system is about to leave its operational design domain (ODD), then that user is expected to be receptive
-  and able to resume DDT performance when alerted to the need to do so. This division of roles corresponds to Level 3.
-  \item Lastly, if a driving automation system can perform the entire DDT and DDT fallback either within a prescribed ODD
-  (Level 4) or in all driver-manageable on-road operating situations (Level 5) then any users present in the vehicle while
-  the ADS is engaged are passengers. 
+  \item If the driving automation system performs the sustained longitudinal and/or lateral vehicle motion control subtasks of the DDT
+  \footnote{
+      All of the real-time operational and tactical functions required to operate a vehicle in on-road traffic, excluding the strategic functions such as trip scheduling and selection of destinations and waypoints, and including, without limitation, the following subtasks:
+      \begin{enumerate}
+        \item Lateral vehicle motion control via steering (operational).
+        \item Longitudinal vehicle motion control via acceleration and deceleration (operational).
+        \item Monitoring the driving environment via object and event detection, recognition, classification, and response preparation (operational and tactical).
+        \item Object and event response execution (operational and tactical).
+        \item Maneuver planning (tactical).
+        \item Enhancing conspicuity via lighting, sounding the horn, signaling, gesturing, etc. (tactical)
+      \end{enumerate}
+  }, the driver does not do so, although s/he is expected to complete the DDT. 
+  This division of roles corresponds to Levels 1 and 2.
+  \item If the driving automation system performs the entire DDT, the user does not do so. However, if a DDT fallback-ready user is expected to take over the DDT when a DDT performance-relevant system failure occurs or when the driving automation system is about to leave its operational design domain (ODD)\footnote{Specified by manufacturer.}, then that user is expected to be receptive and able to resume DDT performance when alerted to the need to do so. 
+  This division of roles corresponds to Level 3.
+  \item Lastly, if a driving automation system can perform the entire DDT and DDT fallback either within a prescribed ODD (Level 4) or in all driver-manageable on-road operating situations (Level 5) then any users present in the vehicle while the ADS is engaged are passengers. 
   
 \end{itemize}
 
-Although the vehicle fulfills a role in this driving automation taxonomy (see scope), it does not change the role of the user in performing the DDT. 
+Although the vehicle fulfills a role in this driving automation taxonomy, it does not change the role of the user in performing the DDT. 
 By contrast the role played by the driving automation system complements the role of the user in performing the DDT, and in that sense changes it.
 
 In this way, driving automation systems are categorized into levels based on:
@@ -105,113 +130,60 @@ In this way, driving automation systems are categorized into levels based on:
 
 Table 1 summarizes the six levels of driving automation in terms of these five elements.
 It is worth mentioning, that SAE’s levels of driving automation are descriptive and informative, rather than normative, and technical rather than legal.
-Elements indicate minimum rather than maximum capabilities for each level.
+Elements indicate minimum rather than maximum capabilities for each level \cite{saej3016}.
 
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-% \usepackage{longtable}
-% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
-% Please add the following required packages to your document preamble:
-% % \usepackage{multirow}
-% \begin{table}[]
-%   \begin{tabular}{|cllcccc|}
-%   \hline
-%   \multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Level}}} &
-%     \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Name}}} &
-%     \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Narrative Definition}}} &
-%     \multicolumn{2}{c|}{\textbf{DDT}} &
-%     \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}DDT \\ Fallback\end{tabular}}}} &
-%     \multirow{2}{*}{\textbf{ODD}} \\ \cline{4-5}
-%   \multicolumn{1}{|c|}{} &
-%     \multicolumn{1}{c|}{} &
-%     \multicolumn{1}{c|}{} &
-%     \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Sustained\\ Lateral and \\ Longitudinal \\ Vechicle \\ Motion \\ Control\end{tabular}}} &
-%     \multicolumn{1}{l|}{\textbf{OEDR}} &
-%     \multicolumn{1}{c|}{} &
-%      \\ \hline
-%   \multicolumn{7}{|c|}{\textbf{Driver Performs Part or All of the DDT}} \\ \hline
-%   \multicolumn{1}{|c|}{\textbf{0}} &
-%     \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}No Driving\\ Automation\end{tabular}}} &
-%     \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The performance by the driver\\ of the entire DDT, even when\\ enchaned by ASSs.\end{tabular}} &
-%     \multicolumn{1}{c|}{Driver} &
-%     \multicolumn{1}{c|}{Driver} &
-%     \multicolumn{1}{c|}{Driver} &
-%     n/a \\ \hline
-%   \multicolumn{1}{|c|}{\textbf{1}} &
-%     \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}Driver\\ Assistance\end{tabular}}} &
-%     \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and ODD-specific\\ execution by a DAS of either the\\ lateral or longitudinal vehicle\\ motion control subtask of the DDT\\ (but not both simultaneously) with\\ the expectation that the driver\\ performs the remainder of the DDT.\end{tabular}} &
-%     \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Driver\\ and\\ System\end{tabular}} &
-%     \multicolumn{1}{c|}{Driver} &
-%     \multicolumn{1}{c|}{Driver} &
-%     Limited \\ \hline
-%   \multicolumn{1}{|c|}{\textbf{2}} &
-%     \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}Partial\\ Driving\\ Automation\end{tabular}}} &
-%     \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and ODD-specific\\ execution by a DAS of both the\\ lateral and longitudinal vehicle\\ motion control subtasks of the DDT\\ with the expectation that the driver\\ completes the OEDR subtask and\\ supervises the DAS.\end{tabular}} &
-%     \multicolumn{1}{c|}{System} &
-%     \multicolumn{1}{c|}{Driver} &
-%     \multicolumn{1}{c|}{Driver} &
-%     Limited \\ \hline
-%   \multicolumn{7}{|c|}{\textbf{ADS Performs the Entire DDT (While Enabled)}} \\ \hline
-%   \multicolumn{1}{|c|}{\textbf{3}} &
-%     \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}Conditional\\ Driving\\ Automation\end{tabular}}} &
-%     \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and ODD-specific\\ performance by an ADS of the\\ entire DDT with the expectation\\ that the DDT fallback-ready user\\ is receptive to ADS-issued requests\\ to intervene, as well as to DDT\\ performance-relevant system\\ failures in other vehicle systems,\\ and will respond appropriately.\end{tabular}} &
-%     \multicolumn{1}{c|}{System} &
-%     \multicolumn{1}{c|}{System} &
-%     \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Fallback-\\ Ready\\ User\\ (becomes\\ the driver\\ during the\\ fallback)\end{tabular}} &
-%     Limited \\ \hline
-%   \multicolumn{1}{|c|}{\textbf{4}} &
-%     \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}High\\ Driving\\ Automation\end{tabular}}} &
-%     \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and ODD-specific\\ performance by an ADS of the\\ entire DDT and DDT fallback\\ without any expectation that a user\\ will need to intervene.\end{tabular}} &
-%     \multicolumn{1}{c|}{System} &
-%     \multicolumn{1}{c|}{System} &
-%     \multicolumn{1}{c|}{System} &
-%     Limited \\ \hline
-%   \multicolumn{1}{|c|}{\textbf{5}} &
-%     \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}Full\\ Driving\\ Automation\end{tabular}}} &
-%     \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and unconditional\\ (i.e., not ODD-specific)\\ performance by an ADS of the\\ entire DDT and DDT fallback\\ wothout any expectation that a user\\ will need to intervene.\end{tabular}} &
-%     \multicolumn{1}{c|}{System} &
-%     \multicolumn{1}{c|}{System} &
-%     \multicolumn{1}{c|}{System} &
-%     Unlimited \\ \hline
-%   \end{tabular}
-%   \caption{}
-%   \label{tab:1}
-%   \end{table}
+\begin{table}[]
+  \centering
+  \catcode`\-=12 %%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+\begin{adjustbox}{width=\textwidth} % fill to the whole page
+
+  \begin{tabular}{|lcllcccc|}
+    \hline
+    \multicolumn{1}{|l|}{\multirow{2}{*}{}}                                                     & \multicolumn{1}{c|}{\multirow{2}{*}{\rotatebox[origin=c]{90}{\textbf{Level} \;}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Name}}}                                                      & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Narrative Definition}}}                                                                                                                                                                                                                                                                                                          & \multicolumn{2}{c|}{\textbf{DDT}}                                                                                                                                                   & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}DDT \\ Fallback\end{tabular}}}}                                 & \multirow{2}{*}{\textbf{ODD}} \\ \cline{5-6}
+    \multicolumn{1}{|l|}{}                                                                      & \multicolumn{1}{c|}{}                                                             & \multicolumn{1}{c|}{}                                                                                    & \multicolumn{1}{c|}{}                                                                                                                                                                                                                                                                                                                                                        & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Sustained\\ Lateral and \\ Longitudinal \\ Vechicle \\ Motion \\ Control\end{tabular}}} & \multicolumn{1}{l|}{\textbf{OEDR}} & \multicolumn{1}{c|}{}                                                                                                                  &                               \\ \hline
+    \multicolumn{8}{|c|}{\textbf{Driver Performs Part or All of the DDT}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+    \multicolumn{1}{|l|}{}                                                                      & \multicolumn{1}{c|}{\textbf{0}}                                                   & \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}No Driving\\ Automation\end{tabular}}}            & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The performance by the driver\\ of the entire DDT, even when\\ enchaned by ASSs.\end{tabular}}                                                                                                                                                                                                                                & \multicolumn{1}{c|}{Driver}                                                                                                                    & \multicolumn{1}{c|}{Driver}        & \multicolumn{1}{c|}{Driver}                                                                                                            & n/a                           \\ \hline
+    \multicolumn{1}{|l|}{\multirow{2}{*}{\rotatebox[origin=c]{90}{\textbf{Driver Support}}}}    & \multicolumn{1}{c|}{\textbf{1}}                                                   & \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}Driver\\ Assistance\end{tabular}}}                & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and ODD-specific\\ execution by a DAS of either the\\ lateral or longitudinal vehicle\\ motion control subtask of the DDT\\ (but not both simultaneously) with\\ the expectation that the driver\\ performs the remainder of the DDT.\end{tabular}}                                                             & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Driver\\ and\\ System\end{tabular}}                                                             & \multicolumn{1}{c|}{Driver}        & \multicolumn{1}{c|}{Driver}                                                                                                            & Limited                       \\ \cline{2-8} 
+    \multicolumn{1}{|l|}{}                                                                      & \multicolumn{1}{c|}{\textbf{2}}                                                   & \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}Partial\\ Driving\\ Automation\end{tabular}}}     & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and ODD-specific\\ execution by a DAS of both the\\ lateral and longitudinal vehicle\\ motion control subtasks of the DDT\\ with the expectation that the driver\\ completes the OEDR subtask and\\ supervises the DAS.\end{tabular}}                                                                           & \multicolumn{1}{c|}{System}                                                                                                                    & \multicolumn{1}{c|}{Driver}        & \multicolumn{1}{c|}{Driver}                                                                                                            & Limited                       \\ \hline
+    \multicolumn{8}{|c|}{\textbf{ADS Performs the Entire DDT (While Enabled)}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
+    \multicolumn{1}{|l|}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\textbf{Automated Driving}}}} & \multicolumn{1}{c|}{\textbf{3}}                                                   & \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}Conditional\\ Driving\\ Automation\end{tabular}}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and ODD-specific\\ performance by an ADS of the\\ entire DDT with the expectation\\ that the DDT fallback-ready user\\ is receptive to ADS-issued requests\\ to intervene, as well as to DDT\\ performance-relevant system\\ failures in other vehicle systems,\\ and will respond appropriately.\end{tabular}} & \multicolumn{1}{c|}{System}                                                                                                                    & \multicolumn{1}{c|}{System}        & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Fallback-\\ Ready\\ User\\ (becomes\\ the driver\\ during the\\ fallback)\end{tabular}} & Limited                       \\ \cline{2-8} 
+    \multicolumn{1}{|l|}{}                                                                      & \multicolumn{1}{c|}{\textbf{4}}                                                   & \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}High\\ Driving\\ Automation\end{tabular}}}        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and ODD-specific\\ performance by an ADS of the\\ entire DDT and DDT fallback\\ without any expectation that a user\\ will need to intervene.\end{tabular}}                                                                                                                                                     & \multicolumn{1}{c|}{System}                                                                                                                    & \multicolumn{1}{c|}{System}        & \multicolumn{1}{c|}{System}                                                                                                            & Limited                       \\ \cline{2-8} 
+    \multicolumn{1}{|l|}{}                                                                      & \multicolumn{1}{c|}{\textbf{5}}                                                   & \multicolumn{1}{l|}{\textit{\begin{tabular}[c]{@{}l@{}}Full\\ Driving\\ Automation\end{tabular}}}        & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}The sustained and unconditional\\ (i.e., not ODD-specific)\\ performance by an ADS of the\\ entire DDT and DDT fallback\\ wothout any expectation that a user\\ will need to intervene.\end{tabular}}                                                                                                                         & \multicolumn{1}{c|}{System}                                                                                                                    & \multicolumn{1}{c|}{System}        & \multicolumn{1}{c|}{System}                                                                                                            & Unlimited*                    \\ \hline
+  \end{tabular}
+
+\end{adjustbox}
+  \vspace{0.35cm}
+  \caption{Summary of levels of driving automation according to SAE J3016.}
+  \label{tab:SAEJ3016}
+\end{table}
 
 In this table, “system” refers to the driving automation system or ADS, as appropriate.
-In addition, the DDT does not include strategic aspects of the driving task, such as determining destination(s) and deciding when to travel.
+Definitions of some terms that seem to be obvious ("driver", for instacne) are omitted for the sake of brevity.
+In addition, as it was implicitly mentioned earlier, the DDT does not include strategic aspects of the driving task, such as determining destination(s) and deciding when to travel.
 
+\begin{note}
+  \textit{“Unconditional/not ODD-specific”} means that the ADS can operate the vehicle on-road anywhere within its region of the world and under all road conditions in which a conventional vehicle can be reasonably operated by a typically skilled human driver. 
+  This means, for example, that there are no design-based weather, time-of-day, or-geographical restrictions on where and when the ADS can operate the vehicle. 
+  However, there may be conditions not manageable by a driver in which the ADS would also be unable to complete a given trip (e.g., white-out snow storm, flooded roads, glare ice, etc.) until or unless the adverse conditions clear. 
+  At the onset of such unmanageable conditions the ADS would perform the DDT fallback to achieve a minimal risk condition (e.g., by pulling over to the side of the road and waiting for the conditions to change). 
+\end{note}
 
+Figure \ref{fig:driving_task} illustrates how a trip could be completed by use of various combinations of driving automation features engaged at different levels of driving automation.
 
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=0.9\textwidth]{images/sae-j3016-chart.png}
-%   \caption{SAE J3016}
-%   \label{fig:SAEJ3016}
-% \end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.9\textwidth]{images/driving_automation.PNG}
+	\caption{Examples of driving automation system features/types that could be available during a given trip.}
+  \label{img:driving_automation}
+\end{figure}
 
-%---------------------------------------------------------------
-\subsection{Level 0 (Unified Diagnostic Services)}
-%---------------------------------------------------------------
-
-%---------------------------------------------------------------
-\subsection{UDS (Unified Diagnostic Services)}
-%---------------------------------------------------------------
-
-%---------------------------------------------------------------
-\subsection{UDS (Unified Diagnostic Services)}
-%---------------------------------------------------------------
-%---------------------------------------------------------------
-\subsection{UDS (Unified Diagnostic Services)}
-%---------------------------------------------------------------
-
-%---------------------------------------------------------------
-\subsection{UDS (Unified Diagnostic Services)}
-%---------------------------------------------------------------
-
-%---------------------------------------------------------------
-\subsection{UDS (Unified Diagnostic Services)}
-%---------------------------------------------------------------
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\textwidth]{images/sae-j3016-chart.png}
+  \caption{SAE J3016}
+  \label{fig:SAEJ3016}
+\end{figure}
 
 %---------------------------------------------------------------
 \section{Internal Networks}
