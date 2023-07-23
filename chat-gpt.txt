@@ -1,0 +1,49 @@
+Step 1: Perform research on signals and SAE levels in automotive ethernet
+
+To start off, you would need to understand automotive ethernet and the SAE levels. For this purpose, you could refer to:
+
+Automotive ethernet literature: Look into standard textbooks, online resources, or research articles to understand the concept of automotive ethernet. "Automotive Ethernet - The Definitive Guide" by Charles M. Kozierok and Robert B. Boatright could be a helpful resource.
+
+SAE levels: The Society of Automotive Engineers (SAE) has established six levels of driving automation (0-5). You can find more information about these levels in SAE J3016, available on the SAE website.
+
+Academic databases: IEEE Xplore, ACM Digital Library, ScienceDirect, etc. have a vast collection of research papers on this topic.
+
+Step 2: Perform research on possibilities of manipulation with data in ethernet packet and data security
+
+For this, resources could be:
+
+Network security textbooks and online resources: These would help you understand the vulnerabilities and possible points of data manipulation in ethernet packets. Books such as "Computer Networking: A Top-Down Approach" by Kurose and Ross could be helpful.
+
+Cybersecurity databases: Websites like the National Vulnerability Database (NVD) can provide up-to-date information on known vulnerabilities in ethernet protocols.
+
+Step 3: Collect RQ for the test system
+
+"RQ" here stands for research questions. This will help you define the scope and goals of your thesis. This should be an iterative process of refining your questions based on the literature you review. Your academic advisor or professors can provide valuable input at this stage.
+
+Step 4: Design SW architecture
+
+Use design patterns and software engineering best practices. UML (Unified Modelling Language) tools like Lucidchart or Microsoft Visio can help visualize your architecture.
+
+Step 5: Design and implement SW for signal manipulation
+
+You will use your programming skills here. Since this project needs to be implemented on Linux, languages like C++, Python or Java could be used. Version control systems (like git) will also be essential here.
+
+Step 6: Design a test strategy for the developed SW
+
+This involves defining your testing goals, methodologies, and metrics for success. You might refer to software testing literature, such as "Software Testing: A Craftsman’s Approach" by Paul C. Jorgensen.
+
+Step 7: Perform the test of implemented SW
+
+Tools like unit test frameworks (for the specific language you're using), integration testing tools like Postman (for API testing) or JMeter (for load testing) could be used.
+
+Finally, remember to keep your advisor or supervisor involved at all stages, as they can provide you with valuable insights and guidance throughout your research journey.
+
+-------------
+
+"On the Potential of Ethernet AFDX for Integrated Modular Avionics Systems" - This thesis by Phillip Mundhenk at Technische Universität München explores the possibility of using Ethernet Avionics Full-Duplex Switched Ethernet (AFDX) as the communication system in avionics. While it doesn't focus on automobiles, it provides insights on Ethernet in another high-stakes, safety-critical industry.
+
+"Cyber-Security Considerations for the Connected Vehicle" - This master's thesis by Dennis Kengo Oka at Chalmers University of Technology addresses the cybersecurity aspects in automotive systems.
+
+"Automotive Ethernet: In-vehicle networking and testing of control devices" - This paper from Vector Informatik explores the challenges of implementing Ethernet in vehicles. While not a thesis, it provides valuable technical insights.
+
+"Performance Analysis of AVB/TSN in Automotive Ethernet Networks" - This thesis by Priyanka Arjun at Technische Universität Berlin focuses on Ethernet's performance in automotive networks.

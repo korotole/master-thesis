@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.14)  27 MAR 2023 01:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.14)  20 JUL 2023 19:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1534,7 +1534,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,30n,90p,1376b,2943s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}{c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt9.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/Software/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ctufit-thesis.pdf (39 pages, 1130059 bytes).
+Output written on ctufit-thesis.pdf (39 pages, 1130053 bytes).
 PDF statistics:
  724 PDF objects out of 1000 (max. 8388607)
  606 compressed objects within 7 object streams

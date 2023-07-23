@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber ctufit-thesis"] 1679871170 "ctufit-thesis.bcf" "ctufit-thesis.bbl" "ctufit-thesis" 1679873302 0
+["biber ctufit-thesis"] 1679871170 "ctufit-thesis.bcf" "ctufit-thesis.bbl" "ctufit-thesis" 1689875501 0
   "./text/bib-database.bib" 1679865644 16376 92914c6fb147c0c74ae1aec1d8fe59f7 ""
-  "ctufit-thesis.bcf" 1679873301 108320 50f682254e42bfa938178a2361d8b880 "pdflatex"
+  "ctufit-thesis.bcf" 1689875499 108320 50f682254e42bfa938178a2361d8b880 "pdflatex"
   (generated)
   "ctufit-thesis.bbl"
   "ctufit-thesis.blg"
   (rewritten before read)
-["pdflatex"] 1679873298 "c:/Users/csrae/mt/thesis/ctufit-thesis.tex" "ctufit-thesis.pdf" "ctufit-thesis" 1679873302 0
+["pdflatex"] 1689875491 "c:/Users/csrae/mt/thesis/ctufit-thesis.tex" "ctufit-thesis.pdf" "ctufit-thesis" 1689875501 0
   "c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1678823886 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1678823886 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "c:/Software/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1678823886 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -283,26 +283,26 @@
   "c:/Software/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1678826468 7883566 fc02089196944f2d669a3bb3aafd2d8e ""
   "c:/Software/texlive/2022/texmf.cnf" 1678826381 713 e69b156964470283e0530f5060668171 ""
   "c:/Users/csrae/mt/thesis/ctufit-thesis.tex" 1679870917 11270 b92f1d4d05f8b6513b493476fff079a1 ""
-  "ctufit-thesis.aux" 1679873301 3600 17e8191b2a2710af7d7870eadee0134f "pdflatex"
+  "ctufit-thesis.aux" 1689875499 3600 17e8191b2a2710af7d7870eadee0134f "pdflatex"
   "ctufit-thesis.bbl" 1679871172 16893 c1100dcbf4032d0f38f795bfa00cc7c6 "biber ctufit-thesis"
   "ctufit-thesis.cls" 1678828820 18600 bed4138544526eed85cbd22ae01b76bc ""
-  "ctufit-thesis.lof" 1679873301 1465 ceb95c87be34a4a33e12e8a2b3530bee "pdflatex"
-  "ctufit-thesis.lol" 1679873301 99 fa69de3b7dbaeecbb291630d4cf93100 "pdflatex"
-  "ctufit-thesis.lot" 1679873301 1166 3c65bef8152d0b1d1f13f83b0e1464b5 "pdflatex"
-  "ctufit-thesis.out" 1679873301 7531 1a51e970f7efe570ad60d3c1764c182f "pdflatex"
-  "ctufit-thesis.run.xml" 1679873301 2577 6a3fdfafdf41a3bdb46683f69200b48b "pdflatex"
+  "ctufit-thesis.lof" 1689875499 1465 ceb95c87be34a4a33e12e8a2b3530bee "pdflatex"
+  "ctufit-thesis.lol" 1689875499 99 fa69de3b7dbaeecbb291630d4cf93100 "pdflatex"
+  "ctufit-thesis.lot" 1689875499 1166 3c65bef8152d0b1d1f13f83b0e1464b5 "pdflatex"
+  "ctufit-thesis.out" 1689875499 7531 1a51e970f7efe570ad60d3c1764c182f "pdflatex"
+  "ctufit-thesis.run.xml" 1689875499 2577 6a3fdfafdf41a3bdb46683f69200b48b "pdflatex"
   "ctufit-thesis.tex" 1679870917 11270 b92f1d4d05f8b6513b493476fff079a1 ""
-  "ctufit-thesis.toc" 1679873301 4483 2a7818e803743e4bb292fe729386a369 "pdflatex"
+  "ctufit-thesis.toc" 1689875499 4483 2a7818e803743e4bb292fe729386a369 "pdflatex"
   "images/ddt_explained.PNG" 1679863938 140168 ce061683bbc9f17ccbe1cd28bcdd4655 ""
   "images/driving_automation.PNG" 1679863436 95508 b3e473dbe7f3f5b84933caa8472c120d ""
   "images/sae-j3016-chart.png" 1679697021 316380 cc91a11d77ee71c8326d0c31f3f212e5 ""
   "korotole-assignment.pdf" 1678855632 43235 9a2c29cfd3edd732f6b4c552b472dd0d ""
-  "text/appendix.aux" 1679873301 4272 641d3c48cb41152ddbd841d589195638 "pdflatex"
+  "text/appendix.aux" 1689875499 4272 641d3c48cb41152ddbd841d589195638 "pdflatex"
   "text/appendix.tex" 1678828820 84 e85a3284b69da5f2ac42b83896727d3e ""
-  "text/medium.aux" 1679873301 4266 ec75667624646130a4e1953386161d89 "pdflatex"
+  "text/medium.aux" 1689875499 4266 ec75667624646130a4e1953386161d89 "pdflatex"
   "text/medium.tex" 1678828820 411 92b73e4737f60e2f65dbe6d603507d0e ""
-  "text/text.aux" 1679873301 11605 9da4c9cdc54e2f6f17fe5307bfcb306b "pdflatex"
-  "text/text.tex" 1679873293 40759 e87411679a8884d521d78af2d0ef19eb ""
+  "text/text.aux" 1689875499 11605 9da4c9cdc54e2f6f17fe5307bfcb306b "pdflatex"
+  "text/text.tex" 1689875489 40759 19c952941d7fc4ec5970749a69202bb8 ""
   (generated)
   "ctufit-thesis.aux"
   "ctufit-thesis.bcf"
